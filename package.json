@@ -1,0 +1,69 @@
+{
+  "name": "veaser",
+  "version": "0.1.0",
+  "description": "一套面向初学者的基于Vue2.x桌面端组件库",
+  "main": "dist/index.umd.js",
+  "keywords": [
+    "veaser",
+    "vue",
+    "ui",
+    "element-ui"
+  ],
+  "author": "ceaser",
+  "files": [
+    "dist",
+    "components"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "npm run build:js && npm run build:css",
+    "lint": "vue-cli-service lint",
+    "build:js": "webpack --config ./webpack.components.js",
+    "build:css": "npx gulp sass",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "sass": "^1.53.0",
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "gulp": "^4.0.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^13.0.2",
+    "vue-loader": "^15.9.8",
+    "vue-template-compiler": "^2.6.14",
+    "vuepress": "^1.9.7",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
