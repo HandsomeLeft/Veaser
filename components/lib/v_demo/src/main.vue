@@ -1,5 +1,5 @@
 <template>
-  <h1 class="v-demo">demo</h1>
+  <h1 class="v-demo">Hello Veaser</h1>
 </template>
 
 <script>
