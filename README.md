@@ -22,4 +22,4 @@ Vue.use(v_demo)
 ```
 
 ### 用户手册
-链接：http://ceaser.fun/vease
+链接：http://ceaser.fun/veaser
