@@ -20,3 +20,6 @@ import {v_demo} from 'veaser';
 Vue.use(v_demo)
 
 ```
+
+### 用户手册
+链接：http://ceaser.fun/vease
