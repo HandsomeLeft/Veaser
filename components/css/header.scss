@@ -1,0 +1,35 @@
+.v-header {
+  text-align: left;
+
+  width: 100%;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+ 
+  line-height: 100%;
+
+  &-title {
+    
+    padding: 0 30px;
+
+    display: inline-block;
+    
+    height: 3em;
+    line-height: 300%;
+    &:hover{
+     
+      cursor: pointer;
+    }
+  }
+  &-line {
+    display: inline-block;
+    color:#dedfe6;
+  }
+  &-content {
+    padding: 0 30px;
+    display: inline-block;
+    
+    height: 3em;
+    line-height: 300%;
+  }
+}
+
