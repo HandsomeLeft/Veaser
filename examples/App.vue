@@ -1,9 +1,8 @@
 <template>
   <div id="app">
     <v_header 
-    title="这是标题" 
-    content="这是内容" 
-    fontSize="30"
+    title="←返回" 
+    content="详情页面" 
     @back="backClick()"
     color="red"
     ></v_header>
