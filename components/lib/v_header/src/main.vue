@@ -1,5 +1,5 @@
 <template>
-  <div class="v-header"  :style="fontSize?{fontSize:fontSize + 'px'} : {} ">
+  <div class="v-header"  >
     <div class="v-header-title" 
     @click="back()" ref="colorChange"  
     @mouseover="mouseover"
@@ -27,10 +27,7 @@ export default {
             type: String,
             default:'返回到上一级'
         },
-        fontSize: {
-            type: Number,
-             default:20
-        },
+      
         color: {
             type: String,
             default:'#1e88e5'

@@ -4,7 +4,7 @@
   width: 100%;
   border: 1px solid #ebebeb;
   border-radius: 3px;
- 
+  font-size: 14px;
   line-height: 100%;
 
   &-title {
@@ -25,6 +25,7 @@
     color:#dedfe6;
   }
   &-content {
+    font-size: 18px;
     padding: 0 30px;
     display: inline-block;
     
