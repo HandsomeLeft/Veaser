@@ -7,6 +7,22 @@
     color="red"
     ></v_header>
 
+    <v_button type='success'>success</v_button>
+    <v_button type='warning'>warning</v_button>
+    <v_button type='primary'>primary</v_button>
+    <v_button type='danger'>danger</v_button>
+    <br />
+    <br />
+    <br />
+    <v_button type='success' round>成功</v_button>
+    <v_button type='warning' round>警告</v_button>
+    
+    <v_button type='primary'
+    disabled>重要</v_button>
+
+    <v_button type='danger'
+    disabled>危险</v_button>
+
     <v_row
       :count="['参数', '类型', '默认值', '说明']"
       :width="1000"
