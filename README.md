@@ -4,7 +4,7 @@
     <img src="https://img1.baidu.com/it/u=364778224,1809100332&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" width="150">
   </a>
   <h1>Veaser</h1>
-  <p>一个面向前端初学者的Vue2.x组件库</p>
+  <p>对前端初学者友好的Vue2.x组件库</p>
   <p>
     <a href="http://ceaser.fun/veaser">用户手册</a> | 
   </p>
