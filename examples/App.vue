@@ -6,7 +6,9 @@
       @back="backClick()"
       color="red"
     ></v_header>
+    <br />
     <v_spinner></v_spinner>
+    <br />
     <v_button type="success">success</v_button>
     <v_button type="warning">warning</v_button>
     <v_button type="primary">primary</v_button>
