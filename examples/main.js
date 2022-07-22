@@ -14,7 +14,7 @@ import v_cart from '../components/lib/v_cart/index.js'
 import v_row from '../components/lib/v_row/index.js'
 import v_header from '../components/lib/v_header/index'
 import v_button from '../components/lib/v_button/index'
-import v_spinner from '../components/lib/v-spinner/index'
+import v_spinner from '../components/lib/v_spinner/index'
 Vue.use(v_demo)
 Vue.use(v_cart)
 Vue.use(v_row)
