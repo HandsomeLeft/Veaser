@@ -3,13 +3,15 @@ import v_demo from './v_demo'
 import v_row from './v_row'
 import v_header from './v_header'
 import v_button from './v_button'
+import v_spinner from './v-spinner'
 
 const components = {
     v_cart,
     v_demo,
     v_row,
     v_header,
-    v_button
+    v_button,
+    v_spinner
 }
 
 const install = function(Vue) {
