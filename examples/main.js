@@ -23,5 +23,5 @@ Vue.use(v_button)
 Vue.use(v_spinner)
 
 new Vue({
-  render: h => h(App),
+  render: (h) => h(App)
 }).$mount('#app')

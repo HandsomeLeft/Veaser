@@ -1,29 +1,30 @@
 @keyframes rotation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .v-spinner {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 120, 255, 0.5);
-    box-shadow: 0px 0px 20px rgba(0, 120, 255, 0.5), inset 0px 0px 20px rgba(0, 120, 255, 0.5);
-    margin: auto;
-    position: relative;
-    &-i{
-        content: "";
-        display: block;
-        width: 0;
-        height: 15px;
-        position: absolute;
-        top: calc(50% - 5px);
-        left: 2px;
-        box-shadow: 0px 0px 50px 10px #0078ff;
-        transform-origin: 100px 0;
-        animation: rotation linear 2s infinite;
-    }
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 120, 255, 0.5);
+  box-shadow: 0px 0px 20px rgba(0, 120, 255, 0.5),
+    inset 0px 0px 20px rgba(0, 120, 255, 0.5);
+  margin: auto;
+  position: relative;
+  &-i {
+    content: '';
+    display: block;
+    width: 0;
+    height: 15px;
+    position: absolute;
+    top: calc(50% - 5px);
+    left: 2px;
+    box-shadow: 0px 0px 50px 10px #0078ff;
+    transform-origin: 100px 0;
+    animation: rotation linear 2s infinite;
+  }
 }

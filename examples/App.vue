@@ -34,7 +34,7 @@
         'type',
         'string',
         'default',
-        '类型，可选值为 default primary info success warning danger',
+        '类型，可选值为 default primary info success warning danger'
       ]"
       :width="1000"
       :configurable="true"
@@ -45,7 +45,7 @@
         'type',
         'string水水水水水水',
         'default',
-        '类型，可选值为 default primary info success warning danger',
+        '类型，可选值为 default primary info success warning danger'
       ]"
       :width="1000"
       :configurable="true"
@@ -56,7 +56,7 @@
         'typ是大大撒大苏打e',
         'string',
         'default',
-        '类型，可选值为 default primary info success warning danger',
+        '类型，可选值为 default primary info success warning danger'
       ]"
       :width="1000"
       :configurable="true"
@@ -100,20 +100,20 @@
 
 <script>
 export default {
-  name: "App",
+  name: 'App',
   data() {
     return {
       data: [1, 2],
-      foo: "padding: 23px;color:#888",
-      bar: "padding: 23px;",
-    };
+      foo: 'padding: 23px;color:#888',
+      bar: 'padding: 23px;'
+    }
   },
   methods: {
     backClick() {
-      alert("事件传递成功");
-    },
-  },
-};
+      alert('事件传递成功')
+    }
+  }
+}
 </script>
 
 <style>

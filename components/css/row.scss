@@ -1,29 +1,29 @@
 .v-row {
-    width: 270px;
-    border-bottom: 1px solid gainsboro;
-    display: flex;
-    flex-wrap:wrap;
-    // justify-content:left;
-    // align-items:flex-start;
-    &-item {
-        width: 20px;
-        flex: 1;
-        text-align:left;
-        line-height: 20px;
-    }
-    &-item:nth-child(1) {
-        // flex: 1;
-        // padding: 50px;
-        color: #0086f6;
-    }
-    &-item:nth-child(2) {
-        // flex: 1;
-        // padding: 50px;
-        color: #0086f6;
-    }
-    &-item:nth-child(3) {
-        // flex: 1;
-        // padding: 50px;
-        color: #0086f6;
-    }
+  width: 270px;
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content:left;
+  // align-items:flex-start;
+  &-item {
+    width: 20px;
+    flex: 1;
+    text-align: left;
+    line-height: 20px;
+  }
+  &-item:nth-child(1) {
+    // flex: 1;
+    // padding: 50px;
+    color: #0086f6;
+  }
+  &-item:nth-child(2) {
+    // flex: 1;
+    // padding: 50px;
+    color: #0086f6;
+  }
+  &-item:nth-child(3) {
+    // flex: 1;
+    // padding: 50px;
+    color: #0086f6;
+  }
 }

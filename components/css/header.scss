@@ -8,29 +8,26 @@
   line-height: 100%;
 
   &-title {
-    
     padding: 0 30px;
 
     display: inline-block;
-    
+
     height: 3em;
     line-height: 300%;
-    &:hover{
-     
+    &:hover {
       cursor: pointer;
     }
   }
   &-line {
     display: inline-block;
-    color:#dedfe6;
+    color: #dedfe6;
   }
   &-content {
     font-size: 18px;
     padding: 0 30px;
     display: inline-block;
-    
+
     height: 3em;
     line-height: 300%;
   }
 }
-

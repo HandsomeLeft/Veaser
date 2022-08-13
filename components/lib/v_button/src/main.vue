@@ -15,13 +15,13 @@
 
 <script>
 export default {
-  name: "v_button",
+  name: 'v_button',
   props: {
     type: {
       type: String,
-      default: "",
-      validator: value => {
-        return ["", "primary", "success", "warning", "danger"].includes(value);
+      default: '',
+      validator: (value) => {
+        return ['', 'primary', 'success', 'warning', 'danger'].includes(value)
       }
     },
     disabled: {
@@ -34,26 +34,24 @@ export default {
     },
     icon: {
       type: String,
-      default: ""
+      default: ''
     }
   },
   computed: {
     styleClass() {
       return {
         [`v-button--${this.type}`]: this.type,
-        ["is-round"]: this.round,
-        "is-disabled": this.disabled
-      };
+        ['is-round']: this.round,
+        'is-disabled': this.disabled
+      }
     }
   },
   methods: {
     handleClick() {
-      this.$emit("click");
+      this.$emit('click')
     }
   }
-};
+}
 </script>
 
-<style>
-
-</style>
+<style></style>
