@@ -9,19 +9,22 @@ import '../components/css/row.scss'
 import '../components/css/header.scss'
 import '../components/css/button.scss'
 import '../components/css/spinner.scss'
+import '../components/css/accordion.scss'
 import v_demo from '../components/lib/v_demo/index.js'
 import v_cart from '../components/lib/v_cart/index.js'
 import v_row from '../components/lib/v_row/index.js'
 import v_header from '../components/lib/v_header/index'
 import v_button from '../components/lib/v_button/index'
 import v_spinner from '../components/lib/v_spinner/index'
+import v_accordion from '../components/lib/v_accordion/index'
 Vue.use(v_demo)
 Vue.use(v_cart)
 Vue.use(v_row)
 Vue.use(v_header)
 Vue.use(v_button)
 Vue.use(v_spinner)
+Vue.use(v_accordion)
 
 new Vue({
-  render: (h) => h(App)
+    render: (h) => h(App)
 }).$mount('#app')
