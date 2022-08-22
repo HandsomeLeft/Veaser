@@ -95,6 +95,7 @@
         </div>
       </template>
     </v_cart>
+    <v_scard :title="title" :img_src="img_src" :text="text"></v_scard>
   </div>
 </template>
 
@@ -105,7 +106,14 @@ export default {
     return {
       data: [1, 2],
       foo: 'padding: 23px;color:#888',
-      bar: 'padding: 23px;'
+      bar: 'padding: 23px;',
+      img_src: [
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-13-pro-model-unselect-gallery-1-202207?wid=5120&hei=2880&fmt=p-jpg&qlt=95&.v=1654897043425',
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-13-pro-model-unselect-gallery-1-202207?wid=5120&hei=2880&fmt=p-jpg&qlt=95&.v=1654897043425',
+        'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-13-pro-model-unselect-gallery-1-202207?wid=5120&hei=2880&fmt=p-jpg&qlt=95&.v=1654897043425'
+      ],
+      title: ['标题1', '标题2', '标题3'],
+      text: ['文本1', '文本2', '文本3']
     }
   },
   methods: {
