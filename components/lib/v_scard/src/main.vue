@@ -55,7 +55,6 @@
 <script>
 export default {
   name: 'v_scard',
-  components: {},
   props: {
     img_src: {
       type: Array

@@ -8,6 +8,7 @@ import v_scard from './v_scard'
 const components = {
   v_cart,
   v_demo,
+
   v_row,
   v_header,
   v_button,
