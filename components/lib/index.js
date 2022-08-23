@@ -5,11 +5,13 @@ import v_header from './v_header'
 import v_button from './v_button'
 import v_spinner from './v_spinner'
 import v_accordion from './v_accordion'
+import v_scard from './v_scard'
 const components = {
     v_cart,
     v_demo,
     v_row,
     v_header,
+    v_spinner,
     v_button,
     v_spinner,
     v_accordion
