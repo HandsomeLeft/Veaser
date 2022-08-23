@@ -1,6 +1,6 @@
 ﻿<div align="center">
   <a href="https:http://ceaser.fun/veaser">
-    <img src="./veaser_logo.jpg" width="150">
+    <img src="./veaser_logo.jpg" width="350">
   </a>
   <h1>Veaser</h1>
   <p>对前端初学者友好的Vue2.x组件库</p>
