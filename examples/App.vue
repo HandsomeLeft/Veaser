@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <v_accordion :img_src="data"></v_accordion>
     <v_header
       title="←返回"
       content="详情页面"
@@ -104,7 +105,13 @@ export default {
   name: 'App',
   data() {
     return {
-      data: [1, 2],
+      data: [
+        'http://pic.bizhi360.com/bbpic/88/10588.jpg',
+        'http://pic.bizhi360.com/bbpic/83/10383.jpg',
+        'http://pic.bizhi360.com/bbpic/37/10437.jpg',
+        'http://pic.bizhi360.com/bbpic/5/10305.jpg',
+        'http://pic.bizhi360.com/bbpic/39/10339.jpg'
+      ],
       foo: 'padding: 23px;color:#888',
       bar: 'padding: 23px;',
       img_src: [
