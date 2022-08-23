@@ -13,7 +13,7 @@ const components = {
     v_header,
     v_spinner,
     v_button,
-    v_spinner,
+    v_scard,
     v_accordion
 }
 
