@@ -7,6 +7,9 @@
   background-color: #ffffff;
   border-radius: 25px;
   box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .card .inner_part {
@@ -147,4 +150,12 @@
 
 input {
   display: none;
+}
+
+.content {
+  padding: 0 20px 0 35px;
+  width: 530px;
+  margin-left: 50px;
+  opacity: 0;
+  transition: 0.6s;
 }

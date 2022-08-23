@@ -18,11 +18,11 @@
 
 ---
 
-### 介绍
+## 介绍
 
 Veaser 一个面向前端初学者的 Vue2.x 组件库，拥抱 `Vue2` 生态。
 
-### 特性
+## 特性
 
 - 🚀 提供 50+个高质量通用组件
 - 🚀 组件十分轻量
@@ -30,7 +30,7 @@ Veaser 一个面向前端初学者的 Vue2.x 组件库，拥抱 `Vue2` 生态。
 - 🛠️ 支持按需引入
 - 💪 确保 90%以上单元测试覆盖率，提供稳定性保证
 
-### 快速上手
+## 快速上手
 
 ### 尝试一个 demo
 
@@ -55,7 +55,10 @@ import { v_demo } from 'veaser'
 Vue.use(v_demo)
 ```
 
-### Contributors
+## 用户手册
+[Veaser](http://ceaser.fun/veaser/)
+
+## Contributors
 
 <a href="https://github.com/HandsomeLeft/Veaser/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=HandsomeLeft/Veaser" />
