@@ -1,6 +1,6 @@
 ﻿<div align="center">
   <a href="https:http://ceaser.fun/veaser">
-    <img src="https://img1.baidu.com/it/u=364778224,1809100332&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" width="150">
+    <img src="./veaser_logo.jpg" width="150">
   </a>
   <h1>Veaser</h1>
   <p>对前端初学者友好的Vue2.x组件库</p>
@@ -56,6 +56,7 @@ Vue.use(v_demo)
 ```
 
 ## 用户手册
+
 [Veaser](http://ceaser.fun/veaser/)
 
 ## Contributors
