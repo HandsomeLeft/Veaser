@@ -7,26 +7,26 @@ import v_spinner from './v_spinner'
 import v_accordion from './v_accordion'
 import v_scard from './v_scard'
 const components = {
-    v_cart,
-    v_demo,
-    v_row,
-    v_header,
-    v_spinner,
-    v_button,
-    v_scard,
-    v_accordion
+  v_cart,
+  v_demo,
+  v_row,
+  v_header,
+  v_spinner,
+  v_button,
+  v_scard,
+  v_accordion
 }
 
-const install = function(Vue) {
-    if (install.installed) {
-        return
-    }
-    Object.keys(components).forEach((key) => {
-        Vue.component(components[key].name, components[key])
-    })
+const install = function (Vue) {
+  if (install.installed) {
+    return
+  }
+  Object.keys(components).forEach((key) => {
+    Vue.component(components[key].name, components[key])
+  })
 }
 
 const API = {
-    install
+  install
 }
 export default API

@@ -7,31 +7,31 @@
 // }
 
 .shell {
-    width: 90%;
-    height: 450px;
-    display: flex;
+  width: 90%;
+  height: 450px;
+  display: flex;
 }
 
 .box {
-    flex: 1;
-    overflow: hidden;
-    transition: 0.5s;
-    margin: 0 15px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-    border: 10px solid #fff;
-    background: #fff;
-    & img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transform: 0.5s;
-    }
-    &:hover {
-        flex-basis: 50%;
-    }
-    &:hover img {
-        width: 100%;
-        height: 100%;
-    }
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 0 15px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  border: 10px solid #fff;
+  background: #fff;
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: 0.5s;
+  }
+  &:hover {
+    flex-basis: 50%;
+  }
+  &:hover img {
+    width: 100%;
+    height: 100%;
+  }
 }
