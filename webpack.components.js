@@ -4,7 +4,7 @@ const path = require('path')
 // const { component } = require('vue/types/umd');
 
 const list = {}
-async function make_list(dirpath, list) {
+function make_list(dirpath, list) {
   const files = glob.sync(`${dirpath}/**/index.js`)
   for (let file of files) {
     const component = file.split(/[/.]/)[2]

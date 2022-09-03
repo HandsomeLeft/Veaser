@@ -31,6 +31,7 @@
   "dependencies": {
     "core-js": "^3.8.3",
     "sass": "^1.53.0",
+    "veaser": "^0.1.5",
     "vue": "^2.6.14"
   },
   "devDependencies": {
