@@ -1,19 +1,17 @@
 <template>
   <svg class="icon" aria-hidden="true">
-  <use :xlink:href="IconName"></use>
-</svg>
+    <use :xlink:href="IconName"></use>
+  </svg>
 </template>
-
-
 
 <script>
 import './iconfont'
 export default {
-  name:'v_icon',
+  name: 'v_icon',
   props: {
     name: {
       type: String,
-      default:''
+      default: ''
     }
   },
   computed: {
