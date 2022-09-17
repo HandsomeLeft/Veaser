@@ -19,6 +19,7 @@ import v_button from '../components/lib/v_button/index'
 import v_spinner from '../components/lib/v_spinner/index'
 import v_accordion from '../components/lib/v_accordion/index'
 import v_scard from '../components/lib/v_scard/index'
+import v_icon from '../components/lib/v_icon/index'
 Vue.use(v_demo)
 Vue.use(v_cart)
 Vue.use(v_row)
@@ -27,6 +28,7 @@ Vue.use(v_button)
 Vue.use(v_spinner)
 Vue.use(v_accordion)
 Vue.use(v_scard)
+Vue.use(v_icon)
 
 new Vue({
   render: (h) => h(App)

@@ -97,6 +97,10 @@
       </template>
     </v_cart>
     <v_scard :title="title" :img_src="img_src" :text="text"></v_scard>
+
+    <v_icon name="share"></v_icon>
+    <v_icon name="seach"></v_icon>
+    <v_icon name="quanbu"></v_icon>
   </div>
 </template>
 
