@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <v_accordion :img_src="data"></v_accordion>
+    <!-- <v_accordion :img_src="data"></v_accordion>
     <v_header
       title="←返回"
       content="详情页面"
@@ -100,7 +100,9 @@
 
     <v_icon name="share"></v_icon>
     <v_icon name="seach"></v_icon>
-    <v_icon name="quanbu"></v_icon>
+    <v_icon name="quanbu"></v_icon> -->
+    <v_input placeholder="请输入姓名" :value="msg" @input="data=>msg=data"></v_input>
+    {{msg}}
   </div>
 </template>
 
@@ -124,7 +126,8 @@ export default {
         'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-13-pro-model-unselect-gallery-1-202207?wid=5120&hei=2880&fmt=p-jpg&qlt=95&.v=1654897043425'
       ],
       title: ['标题1', '标题2', '标题3'],
-      text: ['文本1', '文本2', '文本3']
+      text: ['文本1', '文本2', '文本3'],
+      msg:''
     }
   },
   methods: {

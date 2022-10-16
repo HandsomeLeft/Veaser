@@ -1,0 +1,157 @@
+.v-input {
+  -webkit-appearance: none;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 4px;
+  border: 1px solid #dcdfe6;
+  box-sizing: border-box;
+  color: #606266;
+  display: inline-block;
+  font-size: inherit;
+  height: 40px;
+  line-height: 40px;
+  outline: none;
+  padding: 0 15px;
+  transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+  width: 100%;
+}
+
+.v-input.is-disabled {
+  background-color: #f5f7fa;
+  border-color: #e4e7ed;
+  color: #c0c4cc;
+  cursor: not-allowed;
+}
+
+.v-input.is-center {
+  text-align: center;
+}
+
+.v-input:hover {
+  border-color: #c0c4cc;
+}
+
+.v-input:focus {
+  outline: none;
+  border-color: #409eff;
+}
+
+.v-input::-webkit-scrollbar {
+  z-index: 11;
+  width: 6px;
+}
+
+.v-input::-webkit-scrollbar:horizontal {
+  height: 6px;
+}
+
+.v-input::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  width: 6px;
+  background: #b4bccc;
+}
+
+.v-input::-webkit-scrollbar-corner {
+  background: #fff;
+}
+
+.v-input::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.v-input::-webkit-scrollbar-track-piece {
+  background: #fff;
+  width: 6px;
+}
+
+.r-textarea {
+  display: block;
+  resize: vertical;
+  padding: 5px 15px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: inherit;
+  color: #606266;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+  transition: border-color .2s cubic-bezier(.645, .045, .355, 1)
+}
+
+.r-textarea:focus {
+  outline: none;
+  border-color: #409eff;
+}
+
+.v-input-prepend,
+.v-input-append {
+  background-color: #f5f7fa;
+  color: #909399;
+  display: flex;
+  align-items: center;
+  border: 1px solid #dcdfe6;
+  border-radius: 0px;
+  padding: 0 10px;
+  width: 1px;
+  white-space: nowrap;
+  width: max-content;
+}
+
+
+.has-prepend .v-input {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left: none;
+}
+
+.has-append .v-input {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: none;
+}
+
+.has-prepend .v-input-prepend {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.has-prepend .v-input-append {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.has-append .v-input-append {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.v-input--medium {
+  height: 36px;
+  line-height: 36px;
+}
+
+.v-input--small {
+  height: 32px;
+  line-height: 32px;
+}
+
+.inline-container {
+  width: 100%;
+  display: inline-flex;
+}
+
+.v-input-outer {
+  width: 100%;
+  position: relative;
+}
+
+.v-input-clear {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+  cursor: pointer;
+}
