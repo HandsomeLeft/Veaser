@@ -101,8 +101,11 @@
     <v_icon name="share"></v_icon>
     <v_icon name="seach"></v_icon>
     <v_icon name="quanbu"></v_icon> -->
-    <v_input placeholder="请输入姓名" :value="msg" @input="data=>msg=data"></v_input>
-    {{msg}}
+    <v_input placeholder="请输入姓名" :value="msg" @input="(data) => (msg = data)" type="text"></v_input>
+    {{ msg }}
+    <v_button type="primary" :icon="'seach'">搜索</v_button>
+    <v_button type="primary" >搜索</v_button>
+    <v_button type="success" :icon="'share'">分享</v_button>
   </div>
 </template>
 
@@ -127,7 +130,7 @@ export default {
       ],
       title: ['标题1', '标题2', '标题3'],
       text: ['文本1', '文本2', '文本3'],
-      msg:''
+      msg: ''
     }
   },
   methods: {

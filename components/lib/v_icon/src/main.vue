@@ -24,8 +24,8 @@ export default {
 
 <style scoped>
 .icon {
-  width: 10em;
-  height: 10em;
+  width: 20px;
+  height: 20px;
   vertical-align: -0.15em;
   fill: currentColor;
   overflow: hidden;

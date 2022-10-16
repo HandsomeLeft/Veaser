@@ -54,4 +54,17 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.v-button {
+  text-align: center;
+  font-size: larger;
+}
+.icon {
+  width: 20px;
+    height: 20px;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  margin-right: 10px;
+}
+</style>

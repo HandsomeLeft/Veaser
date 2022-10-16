@@ -1,7 +1,16 @@
 <template>
   <div>
     <!-- attrs继承父级属性 -->
-  <input type="text" class="v-input" v-bind="$attrs" v-model="inputValue" @input="onInput">
+   
+    <template v-if="type==='textarea'">
+      <textarea class="v-textarea" 
+      v-bind="$attrs"
+      v-model="inputValue"
+      @input="onInput"> </textarea>
+    </template>
+    <template v-else>
+      <input type="text" class="v-input" v-bind="$attrs" v-model="inputValue" @input="onInput" />
+    </template>
   </div>
 </template>
 
@@ -11,7 +20,14 @@ export default {
   props: {
     value: {
       type: [String, Number],
-      default:''
+      default: ''
+    },
+    type: {
+      type: String,
+      default: 'text',
+      validator: value => {
+        return ['text', 'textarea'].includes(value)
+      }
     }
   },
   computed: {
@@ -20,18 +36,16 @@ export default {
         return this.value
       },
       set(value) {
-        this.$emit('input',value)
+        this.$emit('input', value)
       }
     }
   },
   methods: {
     onInput(e) {
-      this.message=e.target.value
+      this.message = e.target.value
     }
   }
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

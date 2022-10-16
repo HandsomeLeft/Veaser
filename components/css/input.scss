@@ -12,7 +12,7 @@
   line-height: 40px;
   outline: none;
   padding: 0 15px;
-  transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+  transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
   width: 100%;
 }
 
@@ -64,7 +64,7 @@
   width: 6px;
 }
 
-.r-textarea {
+.v-textarea {
   display: block;
   resize: vertical;
   padding: 5px 15px;
@@ -77,10 +77,10 @@
   background-image: none;
   border: 1px solid #dcdfe6;
   border-radius: 4px;
-  transition: border-color .2s cubic-bezier(.645, .045, .355, 1)
+  transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.r-textarea:focus {
+.v-textarea:focus {
   outline: none;
   border-color: #409eff;
 }
@@ -98,7 +98,6 @@
   white-space: nowrap;
   width: max-content;
 }
-
 
 .has-prepend .v-input {
   border-top-left-radius: 0px;
