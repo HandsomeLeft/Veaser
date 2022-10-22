@@ -5,7 +5,7 @@
     <template v-if="type === 'textarea'">
       <textarea
         class="v-textarea"
-        :class=" styleClass"
+        :class="styleClass"
         :disabled="disabled"
         v-bind="$attrs"
         v-model="inputValue"
@@ -14,19 +14,21 @@
       </textarea>
     </template>
     <template v-else>
-      <div class="v-input-outer"> 
-      <input
-        type="text"
-        class="v-input"
-       :class="styleClass"
-       :disabled="disabled"
-       center
-        v-bind="$attrs"
-        v-model="inputValue"
-        @input="onInput"
-      />
-      <span class="v-input-clear" @click="clearText" v-if="showClear"><v_icon name="share" id="icon1"></v_icon></span>
-      <template slot="prepend">https://</template>
+      <div class="v-input-outer">
+        <input
+          type="text"
+          class="v-input"
+          :class="styleClass"
+          :disabled="disabled"
+          center
+          v-bind="$attrs"
+          v-model="inputValue"
+          @input="onInput"
+        />
+        <span class="v-input-clear" @click="clearText" v-if="showClear"
+          ><v_icon name="share" id="icon1"></v_icon
+        ></span>
+        <template slot="prepend">https://</template>
       </div>
     </template>
   </div>
@@ -51,7 +53,7 @@ export default {
       type: String,
       default: 'default',
       validator: (value) => {
-        return ['medium','small','default'].includes(value)
+        return ['medium', 'small', 'default'].includes(value)
       }
     },
     clearable: {
@@ -64,7 +66,7 @@ export default {
     },
     center: {
       type: Boolean,
-      default:false
+      default: false
     }
   },
   computed: {
@@ -84,7 +86,7 @@ export default {
       }
     },
     showClear() {
-      return this.clearable && this.inputValue!==''
+      return this.clearable && this.inputValue !== ''
     }
   },
   methods: {
@@ -92,7 +94,7 @@ export default {
       this.message = e.target.value
     },
     clearText() {
-      this.inputValue=''
+      this.inputValue = ''
     }
   }
 }

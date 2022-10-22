@@ -1,6 +1,6 @@
 <template>
-  <svg class="icon" aria-hidden="true" :style="{color}">
-    <use :xlink:href="IconName" ></use>
+  <svg class="icon" aria-hidden="true" :style="{ color }">
+    <use :xlink:href="IconName"></use>
   </svg>
 </template>
 
@@ -10,7 +10,7 @@ export default {
   name: 'v_icon',
   data() {
     return {
-      color:'red'
+      color: 'red'
     }
   },
   props: {
