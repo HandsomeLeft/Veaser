@@ -61,9 +61,9 @@ export default {
 }
 .icon {
   width: 20px;
-    height: 20px;
-  vertical-align: -0.15em;
-  fill: currentColor;
+  height: 20px;
+  // vertical-align: -0.15em;
+  // fill: currentColor;
   overflow: hidden;
   margin-right: 10px;
 }

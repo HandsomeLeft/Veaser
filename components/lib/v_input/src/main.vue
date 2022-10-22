@@ -1,15 +1,24 @@
 <template>
   <div>
     <!-- attrs继承父级属性 -->
-   
-    <template v-if="type==='textarea'">
-      <textarea class="v-textarea" 
-      v-bind="$attrs"
-      v-model="inputValue"
-      @input="onInput"> </textarea>
+
+    <template v-if="type === 'textarea'">
+      <textarea
+        class="v-textarea"
+        v-bind="$attrs"
+        v-model="inputValue"
+        @input="onInput"
+      >
+      </textarea>
     </template>
     <template v-else>
-      <input type="text" class="v-input" v-bind="$attrs" v-model="inputValue" @input="onInput" />
+      <input
+        type="text"
+        class="v-input"
+        v-bind="$attrs"
+        v-model="inputValue"
+        @input="onInput"
+      />
     </template>
   </div>
 </template>
@@ -25,7 +34,7 @@ export default {
     type: {
       type: String,
       default: 'text',
-      validator: value => {
+      validator: (value) => {
         return ['text', 'textarea'].includes(value)
       }
     }
