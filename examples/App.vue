@@ -101,7 +101,7 @@
     <v_icon name="share"></v_icon>
     <v_icon name="seach"></v_icon>
     <v_icon name="quanbu"></v_icon> -->
-    <v_input
+    <!-- <v_input
       placeholder="请输入姓名"
       :value="msg"
       @input="(data) => (msg = data)"
@@ -123,7 +123,10 @@
       disabled
       center
     ></v_input>
-    {{ msg }}
+    {{ msg }} -->
+    <v_radio v-model="sex" label="女人">女人</v_radio>
+    <v_radio v-model="sex" label="男人">男人</v_radio>
+    <v_radio v-model="sex" label="男人ren">男人ren</v_radio>
   </div>
 </template>
 
@@ -148,7 +151,8 @@ export default {
       ],
       title: ['标题1', '标题2', '标题3'],
       text: ['文本1', '文本2', '文本3'],
-      msg: ''
+      msg: '',
+      sex:'女人'
     }
   },
   methods: {
