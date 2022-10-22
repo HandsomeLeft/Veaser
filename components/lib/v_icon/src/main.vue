@@ -1,6 +1,6 @@
 <template>
-  <svg class="icon" aria-hidden="true">
-    <use :xlink:href="IconName"></use>
+  <svg class="icon" aria-hidden="true" :style="{color}">
+    <use :xlink:href="IconName" ></use>
   </svg>
 </template>
 
@@ -8,6 +8,11 @@
 import './iconfont'
 export default {
   name: 'v_icon',
+  data() {
+    return {
+      color:'red'
+    }
+  },
   props: {
     name: {
       type: String,
@@ -24,10 +29,11 @@ export default {
 
 <style scoped>
 .icon {
-  width: 20px;
-  height: 20px;
+  width: 10em;
+  height: 10em;
   vertical-align: -0.15em;
   fill: currentColor;
   overflow: hidden;
+  color: red;
 }
 </style>

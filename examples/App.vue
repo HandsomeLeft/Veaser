@@ -101,11 +101,16 @@
     <v_icon name="share"></v_icon>
     <v_icon name="seach"></v_icon>
     <v_icon name="quanbu"></v_icon> -->
-    <v_input placeholder="请输入姓名" :value="msg" @input="(data) => (msg = data)" type="text"></v_input>
+    <!-- <v_input placeholder="请输入姓名" :value="msg" @input="(data) => (msg = data)" type="text"></v_input>
     {{ msg }}
-    <v_button type="primary" :icon="'seach'">搜索</v_button>
-    <v_button type="primary" >搜索</v_button>
-    <v_button type="success" :icon="'share'">分享</v_button>
+    <v_button type="primary" icon="seach">搜索</v_button>
+    <v_button type="primary" icon="share">搜索</v_button>
+    <v_button type="success" icon="share">分享</v_button>
+    <v_button type="warning" icon="quanbu" @click="click">全部</v_button>
+    <v_icon name="quanbu"></v_icon>
+
+    <v_clock></v_clock> -->
+    <v_translater></v_translater>
   </div>
 </template>
 
@@ -136,6 +141,9 @@ export default {
   methods: {
     backClick() {
       alert('事件传递成功')
+    },
+    click() {
+      this.mixinMethod()
     }
   }
 }
