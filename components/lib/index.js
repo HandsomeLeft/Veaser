@@ -7,6 +7,8 @@ import v_spinner from './v_spinner'
 import v_accordion from './v_accordion'
 import v_scard from './v_scard'
 import v_icon from './v_icon'
+import VueResource from 'vue-resource'
+
 const components = {
   v_cart,
   v_demo,
@@ -26,6 +28,7 @@ const install = function (Vue) {
   Object.keys(components).forEach((key) => {
     Vue.component(components[key].name, components[key])
   })
+  Vue.use(VueResource)
 }
 
 const API = {

@@ -6,7 +6,7 @@
     @click="handleClick"
   >
     <span v-if="icon">
-      <v_icon :name="icon"></v_icon>
+      <v_icon :name="icon" id="icon1"></v_icon>
     </span>
 
     <slot></slot>
@@ -62,8 +62,8 @@ export default {
 .icon {
   width: 20px;
   height: 20px;
-  // vertical-align: -0.15em;
-  // fill: currentColor;
+  vertical-align: -0.15em;
+  fill: currentColor;
   overflow: hidden;
   margin-right: 10px;
 }
