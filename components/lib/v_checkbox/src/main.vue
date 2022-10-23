@@ -1,11 +1,19 @@
 <template>
   <label class="v-checkbox">
     <span class="v-checkbox--outer">
-      <span class="v-checkbox--inner" :class="{'is-checked':isChecked}"></span>
-      <input type="checkbox" class="v-checkbox-native" :value="label" v-model="CKValue">
+      <span
+        class="v-checkbox--inner"
+        :class="{ 'is-checked': isChecked }"
+      ></span>
+      <input
+        type="checkbox"
+        class="v-checkbox-native"
+        :value="label"
+        v-model="CKValue"
+      />
     </span>
     <span class="checkbox_label">
-      {{label}}
+      {{ label }}
     </span>
   </label>
 </template>
@@ -23,7 +31,7 @@ export default {
         return this.value
       },
       set(value) {
-        this.$emit('input',value)
+        this.$emit('input', value)
       }
     },
     isChecked() {
@@ -37,6 +45,4 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
+<style></style>
