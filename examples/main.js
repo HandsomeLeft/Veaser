@@ -15,6 +15,7 @@ import '../components/css/input.scss'
 import '../components/css/clock.scss'
 import '../components/css/translater.scss'
 import '../components/css/radio.scss'
+import '../components/css/checkbox.scss'
 import v_demo from '../components/lib/v_demo/index.js'
 import v_cart from '../components/lib/v_cart/index.js'
 import v_row from '../components/lib/v_row/index.js'
@@ -28,6 +29,7 @@ import v_input from '../components/lib/v_input/index'
 import v_clock from '../components/lib/v_clock/index'
 import v_translater from '../components/lib/v_translater/index'
 import v_radio from '../components/lib/v_radio/index'
+import v_checkbox from '../components/lib/v_checkbox/index'
 // Vue.mixin({
 //   data() {
 //     return {
@@ -59,6 +61,7 @@ Vue.use(v_input)
 Vue.use(v_clock)
 Vue.use(v_translater)
 Vue.use(v_radio)
+Vue.use(v_checkbox)
 
 new Vue({
   render: (h) => h(App)

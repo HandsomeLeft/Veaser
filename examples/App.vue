@@ -101,12 +101,13 @@
     <v_icon name="share"></v_icon>
     <v_icon name="seach"></v_icon>
     <v_icon name="quanbu"></v_icon> -->
-    <!-- <v_input
+    <v_input
       placeholder="请输入姓名"
       :value="msg"
       @input="(data) => (msg = data)"
       type="textarea"
       disabled
+      class="i"
     ></v_input>
     <v_input
       placeholder="请输入姓名"
@@ -123,10 +124,35 @@
       disabled
       center
     ></v_input>
-    {{ msg }} -->
+    {{ msg }}
     <v_radio v-model="sex" label="女人">女人</v_radio>
     <v_radio v-model="sex" label="男人">男人</v_radio>
     <v_radio v-model="sex" label="男人ren">男人ren</v_radio>
+
+
+    <div><v_checkbox v-model="hobby" label="篮球">篮球</v_checkbox>
+    <v_checkbox v-model="hobby" label="足球">足球</v_checkbox>
+    <v_checkbox v-model="hobby" label="排球">排球</v_checkbox></div>
+    <p>是否选中：{{hobby}}</p>
+    <v_row :count="['参数', '类型', '默认值', '说明']"  :configurable="true" :item_css="foo"></v_row>
+    <v_row :count="[
+            'type',
+            'string',
+            'default',
+            '类型，可选值为 default primary info success warning danger'
+          ]"  :configurable="true" :item_css="bar"></v_row>
+    <v_row :count="[
+            'type',
+            'string水水水水水水',
+            'default',
+            '类型，可选值为 default primary info success warning danger'
+          ]"  :configurable="true" :item_css="bar"></v_row>
+    <v_row :count="[
+            'typ是大大撒大苏打e',
+            'string',
+            'default',
+            '类型，可选值为 default primary info success warning danger'
+          ]"  :configurable="true" :item_css="bar"></v_row>
   </div>
 </template>
 
@@ -152,7 +178,9 @@ export default {
       title: ['标题1', '标题2', '标题3'],
       text: ['文本1', '文本2', '文本3'],
       msg: '',
-      sex: '女人'
+      sex: '女人',
+      checked: false,
+      hobby:[]
     }
   },
   methods: {
@@ -191,5 +219,8 @@ export default {
   justify-content: space-between;
   padding: 0 8px;
   font-size: 12px;
+}
+.i {
+  width: 50%;
 }
 </style>

@@ -17,8 +17,7 @@ export default {
   name: 'v_row',
   props: {
     width: {
-      type: Number,
-      default: 270
+      type: Number
     },
     count: {
       type: Array,
