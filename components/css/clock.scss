@@ -17,6 +17,7 @@
   width: 200px;
   height: 200px;
   background-color: #282828;
+  position: relative;
 }
 .clock-bg-dark {
   margin-top: 50%;
@@ -28,6 +29,9 @@
   box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
     inset 4px 4px 10px rgba(0, 0, 0, 0.5),
     inset -4px -4px 10px rgba(67, 67, 67, 0.5), 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.clock-dark {
+  // position:absolute;
 }
 .clock-bg > div {
   height: 96%;
