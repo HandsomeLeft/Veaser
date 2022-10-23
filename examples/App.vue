@@ -135,9 +135,9 @@
       <v_checkbox v-model="hobby" label="排球">排球</v_checkbox>
     </div>
     <p>是否选中：{{ hobby }}</p>
-   
+
     <v_message></v_message>
-<v_button type="danger" @click="show">sadasd</v_button>
+    <v_button type="danger" @click="show">sadasd</v_button>
   </div>
 </template>
 
@@ -177,7 +177,7 @@ export default {
     },
     show() {
       this.$message({
-        message:'wsdasdas'
+        message: 'wsdasdas'
       })
     }
   }
