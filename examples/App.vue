@@ -136,7 +136,7 @@
     </div>
     <p>是否选中：{{ hobby }}</p>
 
-    <v_message></v_message>
+    <!-- <v_message></v_message> -->
     <v_button type="danger" @click="show">sadasd</v_button>
   </div>
 </template>
