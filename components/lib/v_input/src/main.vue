@@ -101,11 +101,5 @@ export default {
 </script>
 
 <style scoped>
-.icon {
-  width: 15px;
-  height: 15px;
-  vertical-align: -0.15em;
-  fill: currentColor;
-  overflow: hidden;
-}
+
 </style>

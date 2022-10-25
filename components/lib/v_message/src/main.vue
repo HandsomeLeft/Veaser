@@ -1,7 +1,9 @@
 <template>
   <transition name="message-fade">
     <div class="v-message" :style="computedStyle" v-if="visible">
-      <div class="v-message-content">Hello Veaser</div>
+      <div class="v-message-content">Hello Veaser
+        <span class="close-btn" @click="closeMessage"><v_icon name="share" class="icon2"></v_icon></span>
+      </div>
     </div>
   </transition>
 </template>
@@ -22,6 +24,9 @@ export default {
     createElement() {
       this.visible = true
       document.body.appendChild(this.$el)
+    },
+    closeMessage() {
+      this.visible=false
     }
   },
   computed: {
@@ -30,8 +35,23 @@ export default {
         top: this.verticalTop + 'px'
       }
     }
+  },
+  watch: {
+    visible(newValue) {
+      if (!newValue) {
+        this.$el.addEventListener('transitioned', () => {
+          this.$destroy()
+        })
+        this.$emit('close')
+      }
+    }
+  },
+  beforeDestroy() {
+    this.$el.parentNode.removeChild(this.$el)
   }
 }
 </script>
 
-<style></style>
+<style scoped>
+
+</style>

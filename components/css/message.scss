@@ -23,6 +23,7 @@
   position: absolute;
   right: 10px;
   top: 10px;
+
   cursor: pointer;
 }
 
@@ -66,4 +67,12 @@
 
 .v-message--info .v-message__content {
   color: #909399;
+}
+
+.icon2 {
+  width: 15px;
+  height: 15px;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
 }

@@ -1,6 +1,6 @@
 {
   "name": "veaser",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "一套对前端初学者友好的Vue2.x桌面端组件库",
   "main": "dist/index.umd.js",
   "keywords": [

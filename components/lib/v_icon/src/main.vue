@@ -1,5 +1,5 @@
 <template>
-  <svg class="icon" aria-hidden="true" :style="{ color }">
+  <svg class="icon" v-bind="$attrs" aria-hidden="true" :style="{ color }">
     <use :xlink:href="IconName"></use>
   </svg>
 </template>
@@ -28,12 +28,5 @@ export default {
 </script>
 
 <style scoped>
-.icon {
-  width: 10em;
-  height: 10em;
-  vertical-align: -0.15em;
-  fill: currentColor;
-  overflow: hidden;
-  color: red;
-}
+
 </style>

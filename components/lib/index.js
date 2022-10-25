@@ -7,6 +7,12 @@ import v_spinner from './v_spinner'
 import v_accordion from './v_accordion'
 import v_scard from './v_scard'
 import v_icon from './v_icon'
+import v_input from './v_input'
+import v_clock from './v_clock'
+import v_translater from './v_translater'
+import v_radio from './v_radio'
+import v_checkbox from './v_checkbox'
+import v_message from './v_message'
 import VueResource from 'vue-resource'
 
 const components = {
@@ -18,7 +24,13 @@ const components = {
   v_button,
   v_scard,
   v_accordion,
-  v_icon
+  v_icon,
+  v_input,
+  v_clock,
+  v_translater,
+  v_radio,
+  v_checkbox,
+  v_message
 }
 
 const install = function (Vue) {
