@@ -135,7 +135,14 @@
       <v_checkbox v-model="hobby" label="排球">排球</v_checkbox>
     </div>
     <p>是否选中：{{ hobby }}</p>
-    <v_input placeholder="请输入姓名" :value="msg" @input="(data) => (msg = data)" size="medium" clearable  center>
+    <v_input
+      placeholder="请输入姓名"
+      :value="msg"
+      @input="(data) => (msg = data)"
+      size="medium"
+      clearable
+      center
+    >
     </v_input>
 
     <!-- <v_message></v_message> -->

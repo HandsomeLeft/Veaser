@@ -1,8 +1,11 @@
 <template>
   <transition name="message-fade">
     <div class="v-message" :style="computedStyle" v-if="visible">
-      <div class="v-message-content">Hello Veaser
-        <span class="close-btn" @click="closeMessage"><v_icon name="share" class="icon2"></v_icon></span>
+      <div class="v-message-content">
+        Hello Veaser
+        <span class="close-btn" @click="closeMessage"
+          ><v_icon name="share" class="icon2"></v_icon
+        ></span>
       </div>
     </div>
   </transition>
@@ -26,7 +29,7 @@ export default {
       document.body.appendChild(this.$el)
     },
     closeMessage() {
-      this.visible=false
+      this.visible = false
     }
   },
   computed: {
@@ -52,6 +55,4 @@ export default {
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
