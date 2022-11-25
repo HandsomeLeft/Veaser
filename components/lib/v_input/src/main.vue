@@ -26,7 +26,7 @@
           @input="onInput"
         />
         <span class="v-input-clear" @click="clearText" v-if="showClear"
-          ><v_icon name="share" id="icon1"></v_icon
+          ><v_icon name="guanbi" id="icon1"></v_icon
         ></span>
         <template slot="prepend">https://</template>
       </div>

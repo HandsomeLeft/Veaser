@@ -14,6 +14,10 @@ import v_radio from './v_radio'
 import v_checkbox from './v_checkbox'
 import v_message from './v_message'
 import VueResource from 'vue-resource'
+import v_echarts from './v_echarts'
+import v_todolist from './v_todolist'
+import v_sheepsheep from './v_sheepsheep'
+import { VueJsonp } from 'vue-jsonp'
 
 const components = {
   v_cart,
@@ -30,7 +34,10 @@ const components = {
   v_translater,
   v_radio,
   v_checkbox,
-  v_message
+  v_message,
+  v_echarts,
+  v_todolist,
+  v_sheepsheep
 }
 
 const install = function (Vue) {
@@ -41,6 +48,7 @@ const install = function (Vue) {
     Vue.component(components[key].name, components[key])
   })
   Vue.use(VueResource)
+  Vue.use(VueJsonp)
 }
 
 const API = {

@@ -1,6 +1,6 @@
 {
   "name": "veaser",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "description": "一套对前端初学者友好的Vue2.x桌面端组件库",
   "main": "dist/index.umd.js",
   "keywords": [
@@ -9,7 +9,8 @@
     "ui",
     "element-ui",
     "css",
-    "html"
+    "html",
+    "echarts"
   ],
   "author": "ceaser",
   "files": [
@@ -29,13 +30,14 @@
     "commit": "npm run prettier && cz"
   },
   "dependencies": {
-    "axios": "^1.1.3",
     "core-js": "^3.8.3",
+    "echarts": "^5.4.0",
     "js-md5": "^0.7.3",
     "md5": "^2.3.0",
     "sass": "^1.53.0",
     "veaser": "^0.1.5",
     "vue": "^2.6.14",
+    "vue-jsonp": "^2.0.0",
     "vue-resource": "^1.5.3"
   },
   "devDependencies": {

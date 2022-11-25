@@ -1,0 +1,27 @@
+.v-translater {
+  width: 500px;
+  height: 400px;
+  border: 1px black solid;
+  margin: 10px;
+}
+
+.v-translater-body{
+margin-top: 100px;
+}
+.v-translater-body div {
+  position: relative;
+}
+.form-btn {
+  position: absolute;
+  right: 70px;
+  top: 8px;
+}
+.trans-input {
+  position: absolute;
+  width: 50%;
+  left: 60px;
+  top: 10px;
+}
+.result {
+  margin-top: 30px;
+}

@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
+import { VueJsonp } from 'vue-jsonp'
+Vue.use(VueJsonp)
 
 Vue.config.productionTip = false
 
@@ -18,6 +20,9 @@ import '../components/css/radio.scss'
 import '../components/css/checkbox.scss'
 import '../components/css/message.scss'
 import '../components/css/icon.scss'
+import '../components/css/todolist.scss'
+import '../components/css/echarts.scss'
+import '../components/css/sheepsheep.scss'
 import v_demo from '../components/lib/v_demo/index.js'
 import v_cart from '../components/lib/v_cart/index.js'
 import v_row from '../components/lib/v_row/index.js'
@@ -33,6 +38,9 @@ import v_translater from '../components/lib/v_translater/index'
 import v_radio from '../components/lib/v_radio/index'
 import v_checkbox from '../components/lib/v_checkbox/index'
 import v_message from '../components/lib/v_message/index'
+import v_todolist from '../components/lib/v_todolist/index'
+import v_echarts from '../components/lib/v_echarts/index'
+import v_sheepsheep from '../components/lib/v_sheepsheep/index'
 // Vue.mixin({
 //   data() {
 //     return {
@@ -66,6 +74,9 @@ Vue.use(v_translater)
 Vue.use(v_radio)
 Vue.use(v_checkbox)
 Vue.use(v_message)
+Vue.use(v_todolist)
+Vue.use(v_echarts)
+Vue.use(v_sheepsheep)
 new Vue({
   render: (h) => h(App)
 }).$mount('#app')
