@@ -6,6 +6,19 @@ import v_button from './v_button'
 import v_spinner from './v_spinner'
 import v_accordion from './v_accordion'
 import v_scard from './v_scard'
+import v_icon from './v_icon'
+import v_input from './v_input'
+import v_clock from './v_clock'
+import v_translater from './v_translater'
+import v_radio from './v_radio'
+import v_checkbox from './v_checkbox'
+import v_message from './v_message'
+import VueResource from 'vue-resource'
+import v_echarts from './v_echarts'
+import v_todolist from './v_todolist'
+import v_sheepsheep from './v_sheepsheep'
+import { VueJsonp } from 'vue-jsonp'
+
 const components = {
   v_cart,
   v_demo,
@@ -14,7 +27,17 @@ const components = {
   v_spinner,
   v_button,
   v_scard,
-  v_accordion
+  v_accordion,
+  v_icon,
+  v_input,
+  v_clock,
+  v_translater,
+  v_radio,
+  v_checkbox,
+  v_message,
+  v_echarts,
+  v_todolist,
+  v_sheepsheep
 }
 
 const install = function (Vue) {
@@ -24,6 +47,8 @@ const install = function (Vue) {
   Object.keys(components).forEach((key) => {
     Vue.component(components[key].name, components[key])
   })
+  Vue.use(VueResource)
+  Vue.use(VueJsonp)
 }
 
 const API = {

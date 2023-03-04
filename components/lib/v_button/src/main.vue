@@ -6,7 +6,7 @@
     @click="handleClick"
   >
     <span v-if="icon">
-      <v_icon :name="icon"></v_icon>
+      <v_icon :name="icon" id="icon1"></v_icon>
     </span>
 
     <slot></slot>
@@ -54,4 +54,4 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss" scoped></style>

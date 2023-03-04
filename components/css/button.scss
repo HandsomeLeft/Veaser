@@ -236,3 +236,16 @@
 .v-button::-moz-focus-inner {
   border: 0;
 }
+.v-button {
+  text-align: center;
+  font-size: larger;
+}
+
+.icon1 {
+  width: 20px;
+  height: 20px;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  margin-right: 10px;
+}

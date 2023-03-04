@@ -1,0 +1,78 @@
+.v-message {
+  width: 380px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-width: 1px;
+
+  border-style: solid;
+  border-color: #ebeef5;
+  position: fixed;
+  z-index: 99999;
+  line-height: 20px;
+  transition: top 0.5s;
+  background-color: #edf2fc;
+  padding: 15px 15px 15px 20px;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+
+  cursor: pointer;
+}
+
+.message-fade-enter,
+.message-fade-leave-to {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+.message-fade-enter-active,
+.message-fade-leave-active {
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.v-message--success {
+  background-color: #f0f9eb;
+  border-color: #e1f3d8;
+}
+
+.v-message--success .v-message__content {
+  color: #67c23a;
+}
+
+.v-message--warning {
+  background-color: #fdf6ec;
+  border-color: #faecd8;
+}
+
+.v-message--warning .v-message__content {
+  color: #e6a23c;
+}
+
+.v-message--error {
+  background-color: #fef0f0;
+  border-color: #fde2e2;
+}
+
+.v-message--error .v-message__content {
+  color: #f56c6c;
+}
+
+.v-message--info .v-message__content {
+  color: #909399;
+}
+
+.icon2 {
+  width: 15px;
+  height: 15px;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
